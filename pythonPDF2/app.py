@@ -12,8 +12,6 @@ from langchain.chains import ConversationalRetrievalChain, ConversationChain
 # 确保从langchain-community导入HuggingFaceHub
 from langchain_community.llms import HuggingFaceHub
 from htmlTemplates import css, bot_template, user_template
-import chromadb
-chroma_client = chromadb.Client()
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
